@@ -5,16 +5,22 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
     // Start is called before the first frame update
     private Rigidbody2D rb;
+    private BoxCollider2D coll;
     private SpriteRenderer sprite;
     private Animator anim;
 
-    private float dirX;
+    [SerializedField] private LayerMask jumpableGround;
 
+    private float dirX = 0;
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private float jumpForce = 14f;
 
+    private enum MovementState { idle, running, jumping }
+    
+
     private void Start() {
         rb = GetComponent<Rigidbody2D>();
+        coll = GetComponent<BoxCollider2D>();
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
     }
@@ -32,11 +38,30 @@ public class PlayerMovement : MonoBehaviour {
         UpdateAnimation();
     }
     private void UpdateAnimation() {
+        MovementState state;
         if (dirX > 0f) {
+            state = MovementState.running;
             sprite.flipX = false;
         }
         else if (dirX < 0f) {
+            state = MovementState.running;
             sprite.flipX = true;
         }
+        else {
+            state = MovementState.idle;
+        }
+
+        if (rb.velocity.y > .1f) {
+            state = MovementState.jumping;
+        }
+        else if (rb.velocity.y < -.1f) {
+            state = MovementState.idle;
+        }
+
+        anim.SetInteger("state", (int)state);
+    }
+
+    private bool IsGrounded() {
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
     }
 }
