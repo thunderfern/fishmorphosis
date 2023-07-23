@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Pylon
   - Grandma
+  - Coin
+  - Snow Roof
+  - Flag
+  - Street
   layers:
   - Default
   - TransparentFX
@@ -41,11 +45,29 @@ TagManager:
   - 
   m_SortingLayers:
   - name: Background
+    uniqueID: 1315698733
+    locked: 0
+  - name: Clouds
+    uniqueID: 708671353
+    locked: 0
+  - name: Buildings
+    uniqueID: 346157573
+    locked: 0
+  - name: Backdrop
     uniqueID: 3818349341
+    locked: 0
+  - name: Texturing
+    uniqueID: 1362439135
+    locked: 0
+  - name: Trees
+    uniqueID: 2693322607
     locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Terrain
     uniqueID: 870197447
+    locked: 0
+  - name: Street
+    uniqueID: 3056126779
     locked: 0

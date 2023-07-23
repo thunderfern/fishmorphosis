@@ -75,6 +75,12 @@ public class PlayerMovement : MonoBehaviour {
         if (collision.gameObject.CompareTag("Pylon")) {
             moveSpeed = 1f; 
         }
+        if (collision.gameObject.CompareTag("Snow Roof")) {
+            moveSpeed = 10f; 
+        }
+        if (collision.gameObject.CompareTag("Street")) {
+            moveSpeed = 14f; 
+        }
         /*if (collision.gameObject.CompareTag("Grandma")) {
             if (spacekeydown && !hasGrandma) {
                 //Debug.Log("yes");
@@ -85,7 +91,7 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     private void OnTriggerExit2D(Collider2D collision) {
-        if (collision.gameObject.CompareTag("Pylon")) {
+        if (collision.gameObject.CompareTag("Pylon") || collision.gameObject.CompareTag("Snow Roof") || collision.gameObject.CompareTag("Street")) {
             moveSpeed = 7f; 
         }
     }
