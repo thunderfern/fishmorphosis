@@ -58,3 +58,6 @@ TagManager:
   - name: Terrain
     uniqueID: 870197447
     locked: 0
+  - name: Street
+    uniqueID: 3056126779
+    locked: 0
