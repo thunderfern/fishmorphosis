@@ -5,6 +5,7 @@ using UnityEngine;
 public class WaypointFollower : MonoBehaviour
 {
     [SerializeField] private GameObject[] waypoints;
+<<<<<<< Updated upstream
     private int currentWaypointIndex = 0;
 
     [SerializeField] private float speed = 2f;
@@ -18,4 +19,6 @@ public class WaypointFollower : MonoBehaviour
         }
         transform.position = Vector2.MoveTowards(transform.position, waypoints[currentWaypointIndex].transform.position, Time.deltaTime * speed);
     }
+=======
+>>>>>>> Stashed changes
 }
