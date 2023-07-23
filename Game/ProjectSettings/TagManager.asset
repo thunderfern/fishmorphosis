@@ -43,6 +43,9 @@ TagManager:
   - name: Background
     uniqueID: 3818349341
     locked: 0
+  - name: Texturing
+    uniqueID: 1362439135
+    locked: 0
   - name: Trees
     uniqueID: 2693322607
     locked: 0
