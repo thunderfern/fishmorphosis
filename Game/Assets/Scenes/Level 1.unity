@@ -28621,7 +28621,7 @@ GameObject:
   - component: {fileID: 862810017}
   - component: {fileID: 862810016}
   - component: {fileID: 862810018}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Snow Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
