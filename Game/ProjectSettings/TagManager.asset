@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Pylon
   - Grandma
+  - Coin
+  - Snow Roof
+  - Flag
   layers:
   - Default
   - TransparentFX
