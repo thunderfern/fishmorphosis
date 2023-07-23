@@ -9,8 +9,10 @@ public class PlayerMovement : MonoBehaviour {
     private SpriteRenderer sprite;
     private Animator anim;
     public GameObject Grandma;
+    private bool beforespace = false;
     private bool hasGrandma = false;
     private bool spacekeydown = false;
+    private bool touched = false;
 
     [SerializeField] private LayerMask jumpableGround;
 
@@ -30,7 +32,6 @@ public class PlayerMovement : MonoBehaviour {
 
     // Update is called once per frame
     private void Update() {
-        spacekeydown = Input.GetKeyDown("space");
         dirX = Input.GetAxisRaw("Horizontal");
 
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
@@ -39,15 +40,7 @@ public class PlayerMovement : MonoBehaviour {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
 
-        if (Input.GetKeyDown("space")) {
-            if (hasGrandma) {
-                Instantiate(Grandma, transform.position, transform.rotation);
-                hasGrandma = false;
-            }
-        }
-
         UpdateAnimation();
-
         
     }
     private void UpdateAnimation() {
@@ -82,16 +75,16 @@ public class PlayerMovement : MonoBehaviour {
         if (collision.gameObject.CompareTag("Pylon")) {
             moveSpeed = 1f; 
         }
-        if (collision.gameObject.CompareTag("Grandma")) {
+        /*if (collision.gameObject.CompareTag("Grandma")) {
             if (spacekeydown && !hasGrandma) {
                 //Debug.Log("yes");
                 //Destroy(collision.gameObject);
                 hasGrandma = true;
             }
-        }
+        }*/
     }
 
-    private void OnTriggerExit2D(Collider2D collision) {
+    /*private void OnTriggerExit2D(Collider2D collision) {
         if (collision.gameObject.CompareTag("Pylon")) {
             moveSpeed = 7f; 
         }
@@ -99,19 +92,19 @@ public class PlayerMovement : MonoBehaviour {
 
     private void OnCollisionStay2D(Collision2D collision) { 
         if (collision.gameObject.CompareTag("Grandma")) {
-            Debug.Log("honk");
-            if (Input.GetKey("space")) {
-                hasGrandma = true;
-            }
+            //Debug.Log("honk");
+            touched = true;
+            
         }
     }
     private void OnCollisionEnter2D(Collision2D collision) { 
         if (collision.gameObject.CompareTag("Grandma")) {
-            if (Input.GetKeyDown("space")) {
+            if (Input.GetKey("space") && !beforespace) {
+                beforespace = true;
                 //Destroy(collision.gameObject);
                 
                 hasGrandma = true;
             }
         }
-    }
+    }*/
 }
