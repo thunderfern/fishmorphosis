@@ -36,6 +36,8 @@ public class PlayerMovement : MonoBehaviour {
         }
 
         UpdateAnimation();
+
+        
     }
     private void UpdateAnimation() {
         MovementState state;
@@ -63,5 +65,17 @@ public class PlayerMovement : MonoBehaviour {
 
     private bool IsGrounded() {
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.gameObject.CompareTag("Pylon")) {
+            moveSpeed = 1f; 
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision) {
+        if (collision.gameObject.CompareTag("Pylon")) {
+            moveSpeed = 7f; 
+        }
     }
 }
