@@ -1,17 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class Tutorial : MonoBehaviour
 {
     [SerializeField] private string nextScene;
 
-    private void Update()
+    public void goToNextScene()
     {
-        if (Input.anyKey)
-        {
-            SceneManager.LoadScene(nextScene);
-        }
+        Debug.Log("was press");
+        SceneManager.LoadScene(nextScene);
     }
 }
