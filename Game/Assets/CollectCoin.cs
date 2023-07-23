@@ -9,11 +9,16 @@ public class CollectCoin : MonoBehaviour {
 
     [SerializeField] private Text coinsText;
 
+    private void Start() {
+        coinsText.text = "Coins: " + coins + "/3";
+    }
+    
     private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.CompareTag("Coin")) {
             Destroy(collision.gameObject);
             coins++;
-            coinsText.text = "Coins: " + coins;
+            coinsText.text = "Coins: " + coins + "/3";
         }
     }
+    
 }
