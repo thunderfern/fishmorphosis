@@ -47,6 +47,9 @@ TagManager:
   - name: Background
     uniqueID: 1315698733
     locked: 0
+  - name: Buildings
+    uniqueID: 346157573
+    locked: 0
   - name: Backdrop
     uniqueID: 3818349341
     locked: 0

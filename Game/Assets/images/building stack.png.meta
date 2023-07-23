@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 19
+  spritePixelsToUnits: 17
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -152,10 +152,10 @@ TextureImporter:
       name: building stack_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 179
-        width: 19
-        height: 19
+        x: 4
+        y: 173
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,10 +173,10 @@ TextureImporter:
       name: building stack_1
       rect:
         serializedVersion: 2
-        x: 25
-        y: 179
-        width: 19
-        height: 19
+        x: 21
+        y: 173
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,10 +194,10 @@ TextureImporter:
       name: building stack_2
       rect:
         serializedVersion: 2
-        x: 44
-        y: 179
-        width: 19
-        height: 19
+        x: 38
+        y: 173
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +215,10 @@ TextureImporter:
       name: building stack_3
       rect:
         serializedVersion: 2
-        x: 63
-        y: 179
-        width: 19
-        height: 19
+        x: 55
+        y: 173
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +236,10 @@ TextureImporter:
       name: building stack_4
       rect:
         serializedVersion: 2
-        x: 82
-        y: 179
-        width: 19
-        height: 19
+        x: 72
+        y: 173
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,10 +257,10 @@ TextureImporter:
       name: building stack_5
       rect:
         serializedVersion: 2
-        x: 101
-        y: 179
-        width: 19
-        height: 19
+        x: 89
+        y: 173
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: building stack_6
       rect:
         serializedVersion: 2
-        x: 6
-        y: 160
-        width: 19
-        height: 19
+        x: 106
+        y: 173
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,10 +299,10 @@ TextureImporter:
       name: building stack_7
       rect:
         serializedVersion: 2
-        x: 25
-        y: 160
-        width: 19
-        height: 19
+        x: 4
+        y: 156
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,10 +320,10 @@ TextureImporter:
       name: building stack_8
       rect:
         serializedVersion: 2
-        x: 44
-        y: 160
-        width: 19
-        height: 19
+        x: 21
+        y: 156
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,10 +341,10 @@ TextureImporter:
       name: building stack_9
       rect:
         serializedVersion: 2
-        x: 63
-        y: 160
-        width: 19
-        height: 19
+        x: 38
+        y: 156
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,10 +362,10 @@ TextureImporter:
       name: building stack_10
       rect:
         serializedVersion: 2
-        x: 82
-        y: 160
-        width: 19
-        height: 19
+        x: 55
+        y: 156
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -383,10 +383,10 @@ TextureImporter:
       name: building stack_11
       rect:
         serializedVersion: 2
-        x: 101
-        y: 160
-        width: 19
-        height: 19
+        x: 72
+        y: 156
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -404,10 +404,10 @@ TextureImporter:
       name: building stack_12
       rect:
         serializedVersion: 2
-        x: 6
-        y: 141
-        width: 19
-        height: 19
+        x: 89
+        y: 156
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -425,10 +425,10 @@ TextureImporter:
       name: building stack_13
       rect:
         serializedVersion: 2
-        x: 25
-        y: 141
-        width: 19
-        height: 19
+        x: 106
+        y: 156
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -446,10 +446,10 @@ TextureImporter:
       name: building stack_14
       rect:
         serializedVersion: 2
-        x: 44
-        y: 141
-        width: 19
-        height: 19
+        x: 4
+        y: 139
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -467,10 +467,10 @@ TextureImporter:
       name: building stack_15
       rect:
         serializedVersion: 2
-        x: 63
-        y: 141
-        width: 19
-        height: 19
+        x: 21
+        y: 139
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -488,10 +488,10 @@ TextureImporter:
       name: building stack_16
       rect:
         serializedVersion: 2
-        x: 82
-        y: 141
-        width: 19
-        height: 19
+        x: 38
+        y: 139
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -509,10 +509,10 @@ TextureImporter:
       name: building stack_17
       rect:
         serializedVersion: 2
-        x: 101
-        y: 141
-        width: 19
-        height: 19
+        x: 55
+        y: 139
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -530,10 +530,10 @@ TextureImporter:
       name: building stack_18
       rect:
         serializedVersion: 2
-        x: 6
-        y: 122
-        width: 19
-        height: 19
+        x: 72
+        y: 139
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -551,10 +551,10 @@ TextureImporter:
       name: building stack_19
       rect:
         serializedVersion: 2
-        x: 25
-        y: 122
-        width: 19
-        height: 19
+        x: 89
+        y: 139
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -572,10 +572,10 @@ TextureImporter:
       name: building stack_20
       rect:
         serializedVersion: 2
-        x: 44
-        y: 122
-        width: 19
-        height: 19
+        x: 106
+        y: 139
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -593,10 +593,10 @@ TextureImporter:
       name: building stack_21
       rect:
         serializedVersion: 2
-        x: 63
+        x: 4
         y: 122
-        width: 19
-        height: 19
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -614,10 +614,10 @@ TextureImporter:
       name: building stack_22
       rect:
         serializedVersion: 2
-        x: 82
+        x: 21
         y: 122
-        width: 19
-        height: 19
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -635,10 +635,10 @@ TextureImporter:
       name: building stack_23
       rect:
         serializedVersion: 2
-        x: 101
+        x: 38
         y: 122
-        width: 19
-        height: 19
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -648,6 +648,90 @@ TextureImporter:
       bones: []
       spriteID: eea560f093c42b64aa98b8c2c703cdc3
       internalID: 428276553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building stack_24
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 122
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123e3a55398cd20489cca816baa64a77
+      internalID: -814250355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building stack_25
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 122
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c153e2ad5d37ee49bc8e784f7eff714
+      internalID: -119348926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building stack_26
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 122
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425ae60e5d8349d468a041f845204cef
+      internalID: -459783589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building stack_27
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 122
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1ce2bd61d8f3840a43ddecd651818e
+      internalID: -2131150689
       vertices: []
       indices: 
       edges: []
@@ -680,6 +764,10 @@ TextureImporter:
       building stack_21: -2130288631
       building stack_22: -1369201228
       building stack_23: 428276553
+      building stack_24: -814250355
+      building stack_25: -119348926
+      building stack_26: -459783589
+      building stack_27: -2131150689
       building stack_3: -922562988
       building stack_4: 2090500563
       building stack_5: 493837280
