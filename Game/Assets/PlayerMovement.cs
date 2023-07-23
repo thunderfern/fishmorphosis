@@ -8,6 +8,9 @@ public class PlayerMovement : MonoBehaviour {
     private BoxCollider2D coll;
     private SpriteRenderer sprite;
     private Animator anim;
+    public GameObject Grandma;
+    private bool hasGrandma = false;
+    private bool spacekeydown = false;
 
     [SerializeField] private LayerMask jumpableGround;
 
@@ -27,12 +30,20 @@ public class PlayerMovement : MonoBehaviour {
 
     // Update is called once per frame
     private void Update() {
+        spacekeydown = Input.GetKeyDown("space");
         dirX = Input.GetAxisRaw("Horizontal");
 
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
 
         if (Input.GetButtonDown("Jump") && IsGrounded()) {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        }
+
+        if (Input.GetKeyDown("space")) {
+            if (hasGrandma) {
+                Instantiate(Grandma, transform.position, transform.rotation);
+                hasGrandma = false;
+            }
         }
 
         UpdateAnimation();
@@ -71,11 +82,36 @@ public class PlayerMovement : MonoBehaviour {
         if (collision.gameObject.CompareTag("Pylon")) {
             moveSpeed = 1f; 
         }
+        if (collision.gameObject.CompareTag("Grandma")) {
+            if (spacekeydown && !hasGrandma) {
+                //Debug.Log("yes");
+                //Destroy(collision.gameObject);
+                hasGrandma = true;
+            }
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision) {
         if (collision.gameObject.CompareTag("Pylon")) {
             moveSpeed = 7f; 
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision) { 
+        if (collision.gameObject.CompareTag("Grandma")) {
+            Debug.Log("honk");
+            if (Input.GetKey("space")) {
+                hasGrandma = true;
+            }
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision) { 
+        if (collision.gameObject.CompareTag("Grandma")) {
+            if (Input.GetKeyDown("space")) {
+                //Destroy(collision.gameObject);
+                
+                hasGrandma = true;
+            }
         }
     }
 }
