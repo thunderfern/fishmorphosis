@@ -9,6 +9,7 @@ TagManager:
   - Coin
   - Snow Roof
   - Flag
+  - Street
   layers:
   - Default
   - TransparentFX
