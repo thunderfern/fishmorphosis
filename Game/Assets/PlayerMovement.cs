@@ -84,13 +84,13 @@ public class PlayerMovement : MonoBehaviour {
         }*/
     }
 
-    /*private void OnTriggerExit2D(Collider2D collision) {
+    private void OnTriggerExit2D(Collider2D collision) {
         if (collision.gameObject.CompareTag("Pylon")) {
             moveSpeed = 7f; 
         }
     }
 
-    private void OnCollisionStay2D(Collision2D collision) { 
+    /*private void OnCollisionStay2D(Collision2D collision) { 
         if (collision.gameObject.CompareTag("Grandma")) {
             //Debug.Log("honk");
             touched = true;
